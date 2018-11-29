@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animirani baner</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <a href="http://www.krojacevaskola.com" target="_blank" id="frontend-baner-link">
+        <h1 class="logo"><img src="img/logo.svg" alt="Krojaceva skola"></h1>
+        <h2 class="text-1">Ako volis toplinu doma </h2>
+        <h2 class="text-2"><span>Uci online i postani</span> <br>frontend developer </h2>
+        <div class="window">
+            <img src="img/prozor.svg" alt="Prozor" class="window-frame">
+            <img src="img/pahulje.svg" alt="Pahulje" class="snoww">
+        </div>
+        <img src="img/ambijent.svg" alt="Ambijent" class="enviorment">
+        <img src="img/svetlo.svg" alt="Svetlo" class="light">
+        <div class="notes">
+            <img src="img/nota-1.svg" alt="" class="note-1">
+            <img src="img/nota-2.svg" alt="" class="note-2">
+            <img src="img/nota-3.svg" alt="" class="note-3">
+            <img src="img/nota-4.svg" alt="" class="note-4">
+            <img src="img/nota-5.svg" alt="" class="note-5">
+        </div>
+    </a>
+    //Restart bannera
+    <script>
+        var bannerHolder;
+        var newOne;
+        setInterval(function(){
+            bannerHolder=document.getElementById("frontend-baner-link");
+            newOne=bannerHolder.cloneNode(true);
+            bannerHolder.parentNode.replaceChild(newOne, bannerHolder);
+        }, 9000)
+    </script>
+</body>
+</html>
