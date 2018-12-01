@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800&subset=latin-ext');
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+}
+#frontend-baner-link{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    background-image:url("img/bkg.png") ;
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    color: white;
+    text-transform: uppercase;
+    z-index: 0;
+    opacity: 0;
+    -webkit-animation: 13s fade;
+            animation: 13s fade;
+  }
+  @-webkit-keyframes fade {
+    0% { opacity: 0 }
+    5% {opacity: 1}
+    95% {opacity: 1}
+    100% { opacity: 0}
+  }
+  
+  @keyframes fade {
+    0% { opacity: 0 }
+    5% {opacity: 1}
+    95% {opacity: 1 }
+    100% {opacity: 0}
+  }
+  
+
+.logo{
+        width: 260px;
+        margin: 60px 20px 0px;
+}
+.text-1, .text-2{
+    margin: 0;
+    position: absolute;
+    margin: 40px 20px 0px;
+    font-size: 30px;
+    opacity: 0;
+    z-index: 5;
+
+}
+
+.text-1{
+    -webkit-animation: 3s 2s text-1;
+     animation: 3s 2s text-1;
+}
+@-webkit-keyframes text-1{
+    0%{opacity: 0}
+    30%{opacity: 1}
+    80%{opacity: 1}
+    100%{opacity: 0}
+}
+@keyframes text-1{
+    0%{opacity: 0}
+    30%{opacity: 1}
+    80%{opacity: 1}
+    100%{opacity: 0}
+}
+.text-2{
+    -webkit-animation: 3s 5s forwards text-2;
+            animation: 3s 5s forwards text-2;
+}
+@-webkit-keyframes text-2{
+    0%{opacity: 0}
+    30%{opacity: 1}
+    100%{opacity: 1}
+}
+@keyframes text-2{
+    0%{opacity: 0}
+    30%{opacity: 1}
+    100%{opacity: 1}
+}
+.poklon-mali, .poklon-srednji, .poklon-veliki{
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+        transform: scale(0);
+}
+.poklon-mali{
+    right: 10px;
+    bottom: 50px;
+    position: absolute;
+    z-index: 3;
+   -webkit-animation: .3s 2s forwards poklon-mali;
+    animation: .3s 2s forwards poklon-mali;
+}
+
+
+@keyframes poklon-mali {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    80% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+.poklon-srednji{
+    left: 38px;
+    bottom: 50px;
+    position: absolute;
+    z-index: 2;
+    -webkit-animation: .2s 1.5s forwards poklon-srednji;
+    animation: .2s 1.5s forwards poklon-srednji;
+}
+
+@keyframes poklon-srednji {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    80% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+.poklon-veliki{
+    left: 100px;
+    bottom: 50px;
+    position: absolute;
+    z-index: 1;
+   -webkit-animation: .1s 1s forwards poklon-veliki;
+    animation: .1s 1s forwards poklon-veliki;
+   
+}
+
+@keyframes poklon-veliki{
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    80% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+.trake{
+    position: absolute;
+    margin: 0 auto;
+    top:185px;
+    z-index: 0;
+    opacity: 0;
+    -webkit-animation: 1s 7s forwards trake;
+    animation: 1s 7s forwards trake;
+}
+@-webkit-keyframes trake{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+@keyframes trake{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+.konfete{
+    margin-left: 10px;
+   
+    position: absolute;
+    opacity: 0;
+    -webkit-animation: 1s 8s infinite konfete;
+    animation: 1s 8s infinite konfete;
+}
+@-webkit-keyframes konfete{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+@keyframes konfete{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+.sto{
+        position: absolute;
+        width: 280px;
+        height: 50px;
+        bottom: 0;
+        right: 0;
+        background-color: #FFC58A;
+      }
