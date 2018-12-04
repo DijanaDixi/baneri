@@ -7,7 +7,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    
 }
 
 a {
@@ -50,7 +50,7 @@ a {
 .text-1, .text-2{
     margin: 0;
     position: absolute;
-    margin: 40px 20px 0px;
+    margin: 35px 20px 0px;
     font-size: 30px;
     opacity: 0;
     z-index: 5;
@@ -168,21 +168,37 @@ a {
     margin: 0 auto;
     top:185px;
     z-index: 0;
-    opacity: 0;
+  
     -webkit-animation: 1s 7s forwards trake;
     animation: 1s 7s forwards trake;
+    -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
 }
-@-webkit-keyframes trake{
-    from{opacity: 0}
-    to{opacity: 1}
-}
-@keyframes trake{
-    from{opacity: 0}
-    to{opacity: 1}
-}
+
+@-webkit-keyframes trake {
+    from {
+      -webkit-transform: scale(0);
+              transform: scale(0)
+    }
+    to {
+      -webkit-transform: scale(1);
+              transform: scale(1)
+    }
+  }
+  
+  @keyframes trake {
+    from {
+      -webkit-transform: scale(0);
+              transform: scale(0)
+    }
+    to {
+      -webkit-transform: scale(1);
+              transform: scale(1)
+    }
+  }
 .konfete{
-    margin-left: 10px;
-   
+    margin-left: 22px;
     position: absolute;
     opacity: 0;
     -webkit-animation: 1s 8s infinite konfete;
