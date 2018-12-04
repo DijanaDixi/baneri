@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animirani baner</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <a href="http://www.krojacevaskola.com" target="_blank" id="frontend-baner-link">
+        <h1 class="logo"><img src="img/krojaceva-skola-logo.png" alt="Logo"></h1>
+        <h2 class="text-1">Ako i ti voliš poklone</h2>
+    <h2 class="text-2"><span>Besplatni</span><br>it kursevi.<br> Upiši odmah!</h2>
+  
+       <img src="img/poklon-mali.png" alt="" class="poklon-mali">
+       <img src="img/poklon-srednji.png" alt="" class="poklon-srednji">
+       <img src="img/poklon-veliki.png" alt="" class="poklon-veliki">
+       <img src="img/konfete.png" alt="" class="konfete">
+       <img src="img/trake.png" alt="" class="trake">
+       <div class="sto"></div>
+
+    </a>
+    
+    <script>
+        var banerHolder;
+        var newOne;
+        setInterval(function(){
+            banerHolder=document.getElementById("frontend-baner-link");
+            newOne=banerHolder.cloneNode(true);
+            banerHolder.parentNode.replaceChild(newOne, banerHolder);
+        }, 13000);
+        
+    </script>
+</body>
+</html>
